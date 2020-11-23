@@ -1,0 +1,6 @@
+{
+  "env": {
+    "shopifyAdminPassword": "dev_password",
+    "shopifyAdminApiKey": "dev_api_key"
+  }
+}

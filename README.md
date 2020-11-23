@@ -1,4 +1,4 @@
-# Highlands Cloud Functions
+# Boilerplate Firebase Cloud Functions
 
 Implement functions to prevent duplicated effort on both iOS and Android application.
 
