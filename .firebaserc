@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "local": "boilerplate-firebase-cloud-function",
+    "development": "supermama-dev",
+    "integration": "boilerplate-firebase-cloud-function"
+  }
+}
