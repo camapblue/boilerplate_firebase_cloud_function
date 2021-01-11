@@ -1,7 +1,8 @@
 {
   "projects": {
-    "local": "boilerplate-firebase-cloud-function",
-    "development": "supermama-dev",
-    "integration": "boilerplate-firebase-cloud-function"
+    "default": "boilerplate-firebase-cloud-function",
+    "dev": "boilerplate-firebase-cloud-function-dev",
+    "qc": "boilerplate-firebase-cloud-function-qc",
+    "production": "boilerplate-firebase-cloud-function-production"
   }
 }

@@ -2,16 +2,23 @@ const functions = require('firebase-functions');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+const rest = express();
+rest.use(cors({ origin: true }));
+rest.use(bodyParser.json());
+rest.use(bodyParser.urlencoded({ extended: false }));
 
-const {
-  createUser,
-  helloWorld,
-} = require('./api/index.js');
+rest.post('/test/check', async (req, res) => {
+  try {
+    const data = await check(req.body);
 
-app.post("/user/create", async (req, res) => createUser(req, res));
+    return res.send(data);
+  } catch (error) {
+    return res.status(400).send(error);
+  }
+});
 
-exports.api = functions.https.onRequest(app);
-exports.helloWorld = helloWorld;
+exports.rest = functions.https.onRequest(rest);
+
+const api = require('./api/index');
+
+exports.api = api;
