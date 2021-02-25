@@ -104,3 +104,9 @@ firebase functions:delete FUNCTION-1_NAME --region REGION_NAME
 
 - Run functions locally [Firebase's Emulator](https://firebase.google.com/docs/functions/local-emulator)
 - Write and view logs [Guide](https://firebase.google.com/docs/functions/writing-and-viewing-logs)
+
+## Donations
+
+Please coffee for me if it's helpful for you. Thanks ^_^
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/lequangdaoitm/10)
